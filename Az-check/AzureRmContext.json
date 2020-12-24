@@ -1,0 +1,138 @@
+﻿{
+  "DefaultContextKey": "subscription-2 (77aa4fe1-b94d-42b7-8b39-c4c15eb26acb) - 239c52ed-dd52-4db3-9362-cdae0c8e52b4 - hammadwahab@hotmail.com",
+  "EnvironmentTable": {},
+  "Contexts": {
+    "subscription-2 (77aa4fe1-b94d-42b7-8b39-c4c15eb26acb) - 239c52ed-dd52-4db3-9362-cdae0c8e52b4 - hammadwahab@hotmail.com": {
+      "Account": {
+        "Id": "hammadwahab@hotmail.com",
+        "Credential": null,
+        "Type": "User",
+        "TenantMap": {},
+        "ExtendedProperties": {
+          "HomeAccountId": "00000000-0000-0000-b24f-ee4cdf7b5b53.9188040d-6c67-4c5b-b112-36a304b66dad",
+          "UseDeviceAuth": "true",
+          "Subscriptions": "77aa4fe1-b94d-42b7-8b39-c4c15eb26acb,2e801a3e-ca8a-42a8-9ea2-f4d5dc924517",
+          "Tenants": "239c52ed-dd52-4db3-9362-cdae0c8e52b4"
+        }
+      },
+      "Tenant": {
+        "Id": "239c52ed-dd52-4db3-9362-cdae0c8e52b4",
+        "Directory": null,
+        "IsHome": true,
+        "ExtendedProperties": {}
+      },
+      "Subscription": {
+        "Id": "77aa4fe1-b94d-42b7-8b39-c4c15eb26acb",
+        "Name": "subscription-2",
+        "State": "Enabled",
+        "ExtendedProperties": {
+          "SubscriptionPolices": "{\"locationPlacementId\":\"Public_2014-09-01\",\"quotaId\":\"PayAsYouGo_2014-09-01\",\"spendingLimit\":\"Off\"}",
+          "Account": "hammadwahab@hotmail.com",
+          "HomeTenant": "239c52ed-dd52-4db3-9362-cdae0c8e52b4",
+          "Tenants": "239c52ed-dd52-4db3-9362-cdae0c8e52b4",
+          "Environment": "AzureCloud"
+        }
+      },
+      "Environment": {
+        "Name": "AzureCloud",
+        "Type": "Built-in",
+        "OnPremise": false,
+        "ServiceManagementUrl": "https://management.core.windows.net/",
+        "ResourceManagerUrl": "https://management.azure.com/",
+        "ManagementPortalUrl": "https://go.microsoft.com/fwlink/?LinkId=254433",
+        "PublishSettingsFileUrl": "https://go.microsoft.com/fwlink/?LinkID=301775",
+        "ActiveDirectoryAuthority": "https://login.microsoftonline.com/",
+        "GalleryUrl": "https://gallery.azure.com/",
+        "GraphUrl": "https://graph.windows.net/",
+        "ActiveDirectoryServiceEndpointResourceId": "https://management.core.windows.net/",
+        "StorageEndpointSuffix": "core.windows.net",
+        "SqlDatabaseDnsSuffix": ".database.windows.net",
+        "TrafficManagerDnsSuffix": "trafficmanager.net",
+        "AzureKeyVaultDnsSuffix": "vault.azure.net",
+        "AzureKeyVaultServiceEndpointResourceId": "https://vault.azure.net",
+        "GraphEndpointResourceId": "https://graph.windows.net/",
+        "DataLakeEndpointResourceId": "https://datalake.azure.net/",
+        "BatchEndpointResourceId": "https://batch.core.windows.net/",
+        "AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix": "azuredatalakeanalytics.net",
+        "AzureDataLakeStoreFileSystemEndpointSuffix": "azuredatalakestore.net",
+        "AdTenant": "Common",
+        "ContainerRegistryEndpointSuffix": "azurecr.io",
+        "VersionProfiles": [],
+        "ExtendedProperties": {
+          "OperationalInsightsEndpoint": "https://api.loganalytics.io/v1",
+          "OperationalInsightsEndpointResourceId": "https://api.loganalytics.io",
+          "AzureAnalysisServicesEndpointSuffix": "asazure.windows.net",
+          "AnalysisServicesEndpointResourceId": "https://region.asazure.windows.net",
+          "AzureAttestationServiceEndpointSuffix": "attest.azure.net",
+          "AzureAttestationServiceEndpointResourceId": "https://attest.azure.net",
+          "AzureSynapseAnalyticsEndpointSuffix": "dev.azuresynapse.net",
+          "AzureSynapseAnalyticsEndpointResourceId": "https://dev.azuresynapse.net",
+          "ManagedHsmServiceEndpointResourceId": "https://managedhsm.azure.net",
+          "ManagedHsmServiceEndpointSuffix": "managedhsm.azure.net"
+        }
+      },
+      "VersionProfile": null,
+      "TokenCache": {
+        "CacheData": null
+      },
+      "ExtendedProperties": {}
+    },
+    "Default": {
+      "Account": {
+        "Id": "hammadwahab@hotmail.com",
+        "Credential": null,
+        "Type": "User",
+        "TenantMap": {},
+        "ExtendedProperties": {
+          "HomeAccountId": "00000000-0000-0000-b24f-ee4cdf7b5b53.9188040d-6c67-4c5b-b112-36a304b66dad"
+        }
+      },
+      "Tenant": null,
+      "Subscription": null,
+      "Environment": {
+        "Name": "AzureCloud",
+        "Type": "Built-in",
+        "OnPremise": false,
+        "ServiceManagementUrl": "https://management.core.windows.net/",
+        "ResourceManagerUrl": "https://management.azure.com/",
+        "ManagementPortalUrl": "https://go.microsoft.com/fwlink/?LinkId=254433",
+        "PublishSettingsFileUrl": "https://go.microsoft.com/fwlink/?LinkID=301775",
+        "ActiveDirectoryAuthority": "https://login.microsoftonline.com/",
+        "GalleryUrl": "https://gallery.azure.com/",
+        "GraphUrl": "https://graph.windows.net/",
+        "ActiveDirectoryServiceEndpointResourceId": "https://management.core.windows.net/",
+        "StorageEndpointSuffix": "core.windows.net",
+        "SqlDatabaseDnsSuffix": ".database.windows.net",
+        "TrafficManagerDnsSuffix": "trafficmanager.net",
+        "AzureKeyVaultDnsSuffix": "vault.azure.net",
+        "AzureKeyVaultServiceEndpointResourceId": "https://vault.azure.net",
+        "GraphEndpointResourceId": "https://graph.windows.net/",
+        "DataLakeEndpointResourceId": "https://datalake.azure.net/",
+        "BatchEndpointResourceId": "https://batch.core.windows.net/",
+        "AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix": "azuredatalakeanalytics.net",
+        "AzureDataLakeStoreFileSystemEndpointSuffix": "azuredatalakestore.net",
+        "AdTenant": "Common",
+        "ContainerRegistryEndpointSuffix": "azurecr.io",
+        "VersionProfiles": [],
+        "ExtendedProperties": {
+          "OperationalInsightsEndpoint": "https://api.loganalytics.io/v1",
+          "OperationalInsightsEndpointResourceId": "https://api.loganalytics.io",
+          "AzureAnalysisServicesEndpointSuffix": "asazure.windows.net",
+          "AnalysisServicesEndpointResourceId": "https://region.asazure.windows.net",
+          "AzureAttestationServiceEndpointSuffix": "attest.azure.net",
+          "AzureAttestationServiceEndpointResourceId": "https://attest.azure.net",
+          "AzureSynapseAnalyticsEndpointSuffix": "dev.azuresynapse.net",
+          "AzureSynapseAnalyticsEndpointResourceId": "https://dev.azuresynapse.net",
+          "ManagedHsmServiceEndpointResourceId": "https://managedhsm.azure.net",
+          "ManagedHsmServiceEndpointSuffix": "managedhsm.azure.net"
+        }
+      },
+      "VersionProfile": null,
+      "TokenCache": {
+        "CacheData": null
+      },
+      "ExtendedProperties": {}
+    }
+  },
+  "ExtendedProperties": {}
+}
