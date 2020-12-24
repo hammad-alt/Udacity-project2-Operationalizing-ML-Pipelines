@@ -67,7 +67,8 @@ The pipeline is used as a stepping stone to automate model building and make the
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/a7.PNG?raw=true)
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/7.4.PNG?raw=true)
 
-
+Link to screen cast
+https://youtu.be/2IYrqRVzSKg
 
 
 
