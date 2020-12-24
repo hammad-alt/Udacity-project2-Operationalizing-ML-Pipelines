@@ -17,22 +17,29 @@ The project begins by launching the main studio and uploading the dataset from t
 
 ## Step II:- Using AutoML and Generating Model
 ***
-After creating a compute cluster, we run an experiment using the cluster and use that cluster to run the experiment. From the figures below we can see that VotingEnsemble produces the best accuracy after repeated runs. This step is crucial to choose and determine the best model through the AutoML function, before shipping the model into production.
+After creating a compute cluster, we run an experiment using the cluster and use that cluster to run the experiment. From the figures below we can see that VotingEnsemble produces the best accuracy after repeated runs. This step is crucial to choose and determine the best model through the AutoML function, before shipping the model into production. After the run is completed we can see the details of the model.
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/4.2.PNG?raw=true)
+
+Additionally, we can click on the models tab of the UI to see the details of all the models run and how they have performed. We can see the Voting Ensemble performed the best as Accuracy was the prime metric of the models run.
+
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/4.3.PNG?raw=true)
+
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/4.3.1.PNG?raw=true)
 
 ## Step III:- Azure Authentication
 ***
-In order to create an undisturbed cloud platform that can communicate seamlessly with the backend, authentication is improtant. Continuous Integration and Delivery systems (CI/CD) require a well authenticated system that can automate the logging in proecss, either through passwords or tokens. The AZ toolkit and CLI is used for authenticating Azure cloud services with the local machine.
+In order to create an undisturbed cloud platform that can communicate seamlessly with the backend, authentication is improtant. Continuous Integration and Delivery systems (CI/CD) require a well authenticated system that can automate the logging in proecss, either through passwords or tokens. The AZ toolkit and CLI is used for authenticating Azure cloud services with the local machine. First we type az login and authenticate it from our local machine via a DeviceCode. Then we run ServicePrincipalName to access the automated Azure tools from our local machine via powershell. 
 
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/AZ-SP.PNG?raw=true)
+ With the appID of the created Service Principal we select the role of Contributor and share our workspace config. And install the AzureCLI ML. AzureCLI allows to automate our machine learning activities.
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/AZ-WS-Share.PNG?raw=true)
 
 ## Step IV:- Swagger UI
 ***
 On deploying the model and enabling the application insights, we can now use Swagger to consume the endpoint. Azure provides a Swagger JSON file for deployed models. We first access the deployed model through the Endpoints section and save it in the Exercise folder. In the same folder, the swagger.sh will download the latest Swagger container, and it will run it on port 80. Due to connection issues, this was changed to 9000. The serve.py will start a Python server on port 8000. All files are placed in the same folder to prevent sourcing issues.
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/5.1.PNG?raw=true)
+The serve.py is serving locally on port 8000. Similarly, the swagger.sh is running on port 9000:8080 as other ports were already allocated.
+
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/5.3.PNG?raw=true)
 
 ## Step V:- Model Deployment
@@ -40,6 +47,13 @@ On deploying the model and enabling the application insights, we can now use Swa
 The deployment process involves delivering a trained model into production and then consuming it by clicking on the options in the endpoints section. For the purpose of this project, the deployment is done through the Azure ML Workspace, but it can also be done through the Python SDK. Model metrics with explanations can be seen in the figures and the screencast. The Best Model will be displayed in the Details tab. On deploying the Best Model, we can interact with the HTTP API service and interact by sending data over POST requests.
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/a1.PNG?raw=true)
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/a2.PNG?raw=true)
+Applications Insights enabled is true.
+![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/3.PNG?raw=true)
+![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/3.1.PNG?raw=true)
+Logs.py is running
+![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/3.2.PNG?raw=true)
+![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/3.3.PNG?raw=true)
+
 
 ## Step VI:- Enable Logging and Consuming Endpoints
 ***
@@ -66,6 +80,14 @@ The pipeline is used as a stepping stone to automate model building and make the
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/a6.PNG?raw=true)
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/a7.PNG?raw=true)
 ![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/7.4.PNG?raw=true)
+Published pipeline status shows Active.
+![alt text](https://github.com/hammad-alt/udacityproject2/blob/main/Images/4.PNG?raw=true)
+
+
+## Step X:- Improvements and Future Work
+1.The swagger json file can be modified to include additional information about the model in real time for datasets that are updated constantly and not uploaded.
+2.Comparing the model results with a hyperdrive configuration model to see what parameters are better at predicting the output column values. 
+3.With AZureCLI we can manage many ml-models deployment issues from our pwershell for time saving. Additionally, with CLI we can integrate our azure cloud ml workspace and other configs directly from our powershell and use them in our own machine locally which is also very 
 
 Link to screen cast
 https://youtu.be/2IYrqRVzSKg
